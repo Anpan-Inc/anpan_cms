@@ -1,9 +1,16 @@
 import Vue from "vue";
 import Account from "../components/account";
 
+function isPlacedAt(controller, action) {
+  const currentController = document.body.getAttribute('data-controller')
+  const currentAction = document.body.getAttribute('data-action')
+  return currentController === controller && action === currentAction
+}
 document.addEventListener('DOMContentLoaded', () => {
-  const app = new Vue({
-    render: h => h(Account)
-  }).$mount();
-  document.body.appendChild(app.$el)
+  if (isPlacedAt('home', 'index')) {
+    new Vue({
+      el: '#app',
+      render: h => h(Account)
+    }).$mount();
+  }
 });
