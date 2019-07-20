@@ -6,10 +6,50 @@
   <%= csp_meta_tag %>
 
   <%= javascript_pack_tag 'application' %>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'application' %>
 </head>
 
 <body data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>">
+
+<div class="l-navbar_block">
+  <div class="l-navbar_logo">
+    Anpan
+  </div>
+
+  <a class="l-navbar_logout">ログアウト</a>
+</div>
+
+<div class="l-sidebar_block">
+  <div class="l-sidebar-items">
+    <div class="l-sidebar_item">
+      <div class="l-sidebar_itemIcon"></div>
+      <div class="l-sidebar_itemText">サマリー</div>
+    </div>
+    <div class="l-sidebar_item">
+      <div class="l-sidebar_itemIcon"></div>
+      <div class="l-sidebar_itemText">受注管理</div>
+    </div>
+    <div class="l-sidebar_item">
+      <div class="l-sidebar_itemIcon"></div>
+      <div class="l-sidebar_itemText">商品管理</div>
+    </div>
+    <div class="l-sidebar_item">
+      <div class="l-sidebar_itemIcon"></div>
+      <div class="l-sidebar_itemText">商品管理</div>
+    </div>
+    <div class="l-sidebar_item">
+      <div class="l-sidebar_itemIcon"></div>
+      <div class="l-sidebar_itemText">ユーザー投稿</div>
+    </div>
+    <div class="l-sidebar_item">
+      <div class="l-sidebar_itemIcon"></div>
+      <div class="l-sidebar_itemText">アカウント</div>
+    </div>
+
+  </div>
+</div>
+
+
 <%= yield %>
 </body>
 </html>

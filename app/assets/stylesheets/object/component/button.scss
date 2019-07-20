@@ -1,0 +1,31 @@
+.c-button  {
+  font-family: YuGo;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  border-radius: 4px;
+  padding: .375rem .75rem;
+}
+
+.c-button_primary {
+  @extend .c-button;
+  border: none;
+  &:enabled {
+    color: #F7F9FF;
+    background-color: #9573D9;
+    box-shadow: 0 4px 16px 0 rgba(2, 35, 117, 0.16);
+  }
+  &:disabled {
+    background-color: #F3EDFF;
+    color: rgba(149, 115, 217, 0.2);
+  }
+}
+
+.c-button_save {
+  @extend .c-button_primary;
+  width: 86px;
+  height: 32px;
+}

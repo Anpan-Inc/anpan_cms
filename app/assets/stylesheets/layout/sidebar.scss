@@ -1,0 +1,40 @@
+.l-sidebar_block {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  table-layout: fixed;
+  width: 200px;
+  height: 100%;
+  background: #fff;
+}
+
+.l-sidebar-items {
+  display: table;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.l-sidebar_item {
+  display: table-row;
+  cursor: pointer;
+  height: 60px;
+  text-align: center;
+}
+
+.l-sidebar_itemIcon {
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+}
+
+.l-sidebar_itemText {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  height: 40px;
+  color: #022375;
+  font-family: YuGo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}
