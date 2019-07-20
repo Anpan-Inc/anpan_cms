@@ -1,3 +1,19 @@
+.u-m_auto {
+  margin: auto;
+}
+.u-mt_auto {
+  margin-top: auto;
+}
+.u-mb_auto {
+  margin-bottom: auto;
+}
+.u-mr_auto {
+  margin-right: auto;
+}
+.u-ml_auto {
+  margin-left: auto;
+}
+
 @for $i from 1 through 100 {
   .u-m#{$i} {
     margin: #{$i}px;

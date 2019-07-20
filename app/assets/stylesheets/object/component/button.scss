@@ -29,3 +29,18 @@
   width: 86px;
   height: 32px;
 }
+
+.c-button_close {
+  //FIXME: 画像に置き換える
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #F34C4C;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 1;
+}
