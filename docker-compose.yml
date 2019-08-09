@@ -9,19 +9,7 @@ services:
       MYSQL_USER: root
       MYSQL_PASSWORD: root
       MYSQL_ROOT_PASSWORD: root
-#    volumes:
-#    - postgres-data:/var/lib/postgresql
+    volumes:
+    - ./mysql:/var/lib/mysql
     ports:
     - 3306:3306
-#  db:
-#    image: postgres:10.5
-#    environment:
-#      POSTGRES_USER: devuser
-#      POSTGRES_PASSWORD: devuser
-#    ports:
-#    - 5432:5432
-#    volumes:
-#    - postgres-data:/var/lib/postgresql
-#volumes:
-#  postgres-data:
-#    driver: local
