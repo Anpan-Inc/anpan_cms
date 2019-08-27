@@ -1,0 +1,40 @@
+.c-formLabel {
+  display: inline-block;
+  width: 100%;
+  color: #022375;
+  font-family: YuGo;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.c-inputGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.c-input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  background-color: #F7F9FF;
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 4px 0 rgba(2, 35, 117, 0.1), inset -1px 0 4px 0 rgba(2, 35, 117, 0.1);
+  color: #022375;
+  font-size: 16px;
+  font-family: YuGo;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: left;
+  padding: 12px 20px;
+}
+
+.c-textarea {
+  @extend .c-input;
+  height: 144px;
+  padding: 8px 20px 16px 20px;
+}

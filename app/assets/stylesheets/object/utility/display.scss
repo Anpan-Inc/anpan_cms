@@ -1,0 +1,23 @@
+.u-flex {
+  display: flex;
+}
+
+.u-flex_row {
+  flex-direction: row;
+}
+
+.u-flex_column {
+  flex-direction: column;
+}
+
+.u-justifyContent_center {
+  justify-content: center;
+}
+
+.u-alignItems_center {
+  align-items: center;
+}
+
+.u-none {
+  display: none;
+}

@@ -1,0 +1,49 @@
+.u-m_auto {
+  margin: auto;
+}
+.u-mt_auto {
+  margin-top: auto;
+}
+.u-mb_auto {
+  margin-bottom: auto;
+}
+.u-mr_auto {
+  margin-right: auto;
+}
+.u-ml_auto {
+  margin-left: auto;
+}
+
+@for $i from 1 through 100 {
+  .u-m#{$i} {
+    margin: #{$i}px;
+  }
+  .u-mt#{$i} {
+    margin-top: #{$i}px;
+  }
+  .u-mb#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .u-mr#{$i} {
+    margin-right: #{$i}px;
+  }
+  .u-ml#{$i} {
+    margin-left: #{$i}px;
+  }
+
+  .u-p#{$i} {
+    padding: #{$i}px;
+  }
+  .u-pt#{$i} {
+    padding-top: #{$i}px;
+  }
+  .u-pb#{$i} {
+    padding-bottom: #{$i}px;
+  }
+  .u-pr#{$i} {
+    padding-right: #{$i}px;
+  }
+  .u-pl#{$i} {
+    padding-left: #{$i}px;
+  }
+}
