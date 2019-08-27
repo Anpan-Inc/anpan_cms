@@ -10,7 +10,7 @@
           <img class="accountImage u-ml16" :src="imageUrl">
           <span class="c-button_close accountCloseButton" @click="onClickImageClose">x</span>
         </div>
-        <button class="c-button_save u-ml_auto" :disabled="!isChangedSomething" @click="onClickSaveAll">全て保存</button>
+        <button class="c-button_save u-ml_auto" :disabled="!hasSomethingToSave" @click="onClickSaveAll">全て保存</button>
       </div>
 
       <div class="u-mb32">
@@ -96,7 +96,7 @@
       },
     },
     computed: {
-      isChangedSomething() {
+      hasSomethingToSave() {
         return Object.keys(this.changed).some((key) => this.changed[key])
       }
     },
